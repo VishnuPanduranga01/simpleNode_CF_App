@@ -1,0 +1,16 @@
+_schema-version: "3.2"
+ID: simpleNodeApp
+description: MTA Apps
+version: 1.0.0
+
+modules:
+  - name: simpleNodeApp
+    type: javascript.nodejs
+    path: /
+    build-parameters:
+      builder: custom
+      commands: []
+      ignore:
+        - node_modules/
+        - package-lock.json
+
